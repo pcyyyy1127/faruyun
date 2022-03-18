@@ -1,0 +1,101 @@
+<view class="home-box">
+  <image
+    src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5sgZe*33jYS0wIyrLOWsMiNP0vHMc9aZ2DBa6dGmWhJqyXwAoysGuxY7SSn30xEV4gaS.ORcBawse0P1DkSM0bA!/mnull&bo=LgWAAu8GWQMBCTQ!&rf=photolist&t=5"
+    class="back"></image>
+  <calendarMonth bindmydata="mydata"></calendarMonth>
+  <view style="width: 100%;">
+    <view class="mokuai">
+      <image src="/images/red.png" class="yellow"></image>
+      <view class="class_text">模块功能 </view>
+    </view>
+  </view>
+
+  <view class="channalCon">
+    <navigator open-type="navigate" class="position_1" url="/pages/xihu/xihu">
+      <view class="channal">
+        <image class="channalPic"
+          src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5okfdh0*0wRaEYix6EIcYWZUtM9Up4URHFGCsh0Asz*0K4CG8VVJBcJdAiVbWw3YePa6CETycj9mhpxLm11mC0c!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5">
+        </image>
+      </view>
+      <view class="channalText">洗护周期</view>
+    </navigator>
+
+    <navigator open-type="navigate" class="position_1" url="/pages/hair/hair">
+      <view class="channal">
+        <image class="channalPic"
+          src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5uL9mSilf92h5wI3pa60z06XX6*s.Kb9PWw28Z695TaUqiVgVfpXtZuCEy7V0tCADF*tnB1uIknahDZ8i4DeMe4!/mnull&bo=QABAAEAAQAADCSw!&rf=photolist&t=5">
+        </image>
+      </view>
+      <view class="channalText">头发记录</view>
+    </navigator>
+
+    <navigator open-type="navigate" class="position_1" url="/pages/sleep/sleep">
+      <view class="channal">
+        <image class="channalPic"
+          src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5puYQe816cII7vvhGo2UW8D3V8bxr9DnHJnmbPgp2taioptfpUneVkIaKBTWwKwaXchH07Cbwn1QmWLz64Qm8VY!/mnull&bo=SgBAAEoAQAADCSw!&rf=photolist&t=5">
+        </image>
+      </view>
+      <view class="channalText">睡眠记录</view>
+    </navigator>
+
+    <navigator open-type="navigate" class="position_1" url="/pages/stress/stress">
+      <view class="channal">
+        <image class="channalPic" src="/images/heart.png"></image>
+      </view>
+      <view class="channalText">压力测试</view>
+    </navigator>
+    <navigator open-type="navigate" class="position_1" url="/pages/inquriy/inquriy">
+      <view class="channal">
+        <image class="channalPic"
+          src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5szmChRAi9.3DqUzvNP4jbR8iFX4yWL6MCqXlCnEyNhqQLsNA07RK73.FQYxHIECF71rVQxw8xy9*nNCEIMDDyA!/mnull&bo=QABAAEAAQAADCSw!&rf=photolist&t=5">
+        </image>
+      </view>
+      <view class="channalText">医生咨询</view>
+    </navigator>
+    <navigator open-type="navigate" class="position_1" url="/pages/zyyh/zyyh">
+      <view class="channal">
+        <image class="channalPic"
+          src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5okfdh0*0wRaEYix6EIcYWYn5VlJza9gLNC7fHUbD23pmj2RjKT8vARbTye4pi47hTnbv.uunLWwHf9hbxmjDSU!/mnull&bo=QABAAEAAQAADCSw!&rf=photolist&t=5">
+        </image>
+      </view>
+      <view class="channalText">中药养护</view>
+    </navigator>
+    
+  </view>
+
+
+  <view style="width: 100%;">
+    <view class="mokuai">
+      <image src="/images/red.png" class="yellow"></image>
+      <view class="class_text">每日科普 </view>
+    </view>
+  </view>
+  <!-- <view> -->
+  <view class="science">
+    <view class="detailsci" wx:for="{{sciencelist}}" wx:key="index" data-index="{{index}}" bindtap="todetail">
+      <image mode="aspectFill" src="{{item.imgUrl}}"></image>
+      <view class="detailtext">
+        <text style="font-size:28rpx;color:#565555;font-weight:bold;">{{item.title}}</text>
+        <text style="font-size:25rpx;color:#787575;margin-top:10rpx" class="text2">{{item.content}}></text>
+      </view>
+      <text style="color:#787575;" bindtap="todetail">></text>
+    </view>
+  </view>
+
+
+
+
+
+  <!-- <block wx:for="{{sciencelist}}" wx:key="it" wx:for-index="index">
+      <view class="detailsci">
+        <image mode="aspectFill" src="{{item.imgUrl}}"></image>
+        <view class="detailtext">
+          <text style="font-size:28rpx;color:#565555;font-weight:bold;">{{item.title}}</text>
+          <text style="font-size:25rpx;color:#787575;margin-top:10rpx" class="text2">{{item.content}}</text>
+        </view>
+        <text style="color:#787575;margin-top:140rpx" bindtap="todetail">></text>
+      </view>
+    </block> -->
+  <!-- </view> -->
+
+</view>

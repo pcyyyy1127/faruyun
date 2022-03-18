@@ -1,0 +1,25 @@
+<!--pages/result/result.wxml-->
+<view>
+  <view class="str">
+    <view class="str-tit">您的测试报告</view>
+    <image class="str-tit-img" mode="widthFix" src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5puYQe816cII7vvhGo2UW8C1FyEgQrOZ0Gz*1hZhOmIkIDZVfjAndn3EwMfYrqPh5gcnUwcu0H2PpjgGCdFnNDk!/mnull&bo=7gIzAwAAAAABB*w!&rf=photolist&t=5"></image>
+  </view>
+  <view class="str-con">
+    <view class="str-con-item">
+      <view class="str-con-item-tit">压力情况</view>
+      <view class="progress-box">
+        <canvas class="progress-bg" canvas-id="canvasProgressbg"> </canvas>
+        <canvas class="progress-canvas" canvas-id="canvasProgress"> </canvas>
+        <text class="progress-txt">{{pro_percent}}</text>
+      </view>
+      <view class="str-con-item-title">{{resultlist[stress_index].title}}</view>
+      <view class="str-con-item-con">{{resultlist[stress_index].scontent}}</view>
+    </view>
+    <view class="str-con-item">
+      <view class="str-con-item-tit">解压方式</view>
+      <view class="str-con-item-con">
+        <rich-text nodes="{{resultlist[stress_index].fcontent}}"></rich-text>
+      </view>
+    </view>
+  </view>
+</view>

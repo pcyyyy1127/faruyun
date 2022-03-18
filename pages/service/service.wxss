@@ -1,0 +1,25 @@
+/* pages/service/service.wxss */
+.box {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+.box-img {
+  margin-top: 100px;
+  transform: scale(1.5);
+  z-index: -1;
+  margin-bottom: 60px;
+  align-self: center;
+}
+.box-txt {
+  display: flex;
+  flex-direction: column;
+  color: #913D3F;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  align-self: center;
+  line-height: 50rpx;
+}

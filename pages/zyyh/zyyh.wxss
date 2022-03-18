@@ -1,0 +1,39 @@
+/* pages/zyyh/zyyh.wxss */
+.box {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.box-video {
+  width: 96%;
+  border-bottom: 1px solid #bbbbbb;
+  padding-bottom: 10rpx;
+  display: inline-block;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.box-article {
+  width: 96%;
+  border-bottom: 1px solid #bbbbbb;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 40rpx;
+  align-items: center;
+  color: #333333;
+}
+.box-article-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.box-article-con {
+  font-size: 28rpx;
+  margin: 0 30rpx;
+  line-height: 46rpx;
+}

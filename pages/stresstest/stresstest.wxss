@@ -1,0 +1,91 @@
+/* pages/stresstest/stresstest.wxss */
+.progress-box {
+  width: 80%;
+  height: 10vh;
+  margin-left: 10%;
+  margin-top: 80rpx;
+}
+
+.test-box {
+  width: 96%;
+  margin:20rpx 2%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;/*字体两边对齐*/
+}
+
+.test-box-title {
+  height: 10vh;
+  font-size: 35rpx;
+  margin: 50rpx 10rpx;
+  color: #B88385;
+}
+ 
+.text-box-radio { 
+  width: 50%;
+  display: flex;
+  justify-content:space-between;
+  font-size: 35rpx;
+}
+
+.test-box-last{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 30rpx;
+}
+.test-box-last-item{
+  width: 120rpx;
+  align-self: flex-start;
+  line-height: 40rpx;
+  font-size: 25rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #B88385;
+  border-radius: 20rpx;
+}
+
+/*radio未选中时样式 */ 
+radio .wx-radio-input {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+/* 选中后的 背景样式 */
+radio .wx-radio-input.wx-radio-input-checked {
+  border-color: #B88385!important;
+  background-color: #fff!important;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 选中后的 对勾样式  */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  /* 去除对号 */
+  content: ''; 
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #B88385;
+
+}
+
+
+.str-btn-box {
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+.str-btn {
+  display: inline-block;
+  width: 220rpx;
+  line-height: 70rpx;
+  background-color: #9C5052;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 40rpx;
+  text-align: center;
+}

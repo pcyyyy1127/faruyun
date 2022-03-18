@@ -1,0 +1,30 @@
+<!--pages/stress/stress.wxml-->
+<view>
+  <view class="str">
+   
+    <view class="str-tit">专业心里健康评估</view>
+    <view class="str-sub">测测你心里压力程度</view>
+    <image class="str-tit-img" mode="aspectFill" src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5tfNNLWL.g9Q7BizmTm6vDsB.SHB9oyb4NzgLbK.ehrNcVwNnWQdIUbRtDPKMh82iwY3deBTY3z0IBZzqZpuHQw!/mnull&bo=hgHAAAAAAAABB2c!&rf=photolist&t=5"></image>
+  </view>
+  <view class="str-tab">
+    <view class="str-tab-item">已测试：250万人</view>
+    <view class="str-tab-item">题目：18道精选</view>
+    <view class="str-tab-item">报告：1页</view>
+  </view>
+  <view class="str-con">
+    <view class="str-con-item" wx:for="{{list}}" wx:key="index">
+      <view class="str-con-item-tit">{{item.title}}</view>
+      <view class="str-con-item-con">
+        <rich-text nodes="{{item.content}}"></rich-text>
+      </view>
+    </view>
+  </view>
+  <view class="str-aly">
+    说明:请仔细地阅读每一条，然后根据最近一个月以内，您的实际感觉，选择适合的答案点击，请注意不要漏题。
+  </view>
+  <view class="str-btn-box">
+    <view class="str-btn" bindtap="startTest">
+      <text>立即测试</text>
+    </view>
+  </view>
+</view>

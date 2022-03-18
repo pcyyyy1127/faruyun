@@ -1,0 +1,10 @@
+<!--pages/zyyh/zyyh.wxml-->
+<view class="box">
+  <view class="box-video">
+  <video style="width:100%" src="https://oesf.cddmi.cn///UploadFiles//3453807377256546304//c9b3e464-1fd9-4d45-9fb0-c42844f46195.mp4"></video>
+  </view>
+  <view class="box-article" wx:for="{{articlelist}}" wx:key="inndex">
+    <text class="box-article-title">{{item.title}}</text>
+    <text class="box-article-con">{{item.content}}</text>
+  </view>
+</view>

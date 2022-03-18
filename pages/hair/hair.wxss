@@ -1,0 +1,160 @@
+/* pages/hair/hair.wxss */
+/**父容器样式*/
+.hbox{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputhair{
+  background-color: white;
+  width: 90%;
+  height: 30vh;
+  border: 1px solid #913D3F;
+  border-radius: 20rpx;
+}
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+
+.toastbg {
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40%;
+}
+
+.toast-title {
+  background-color: #913D3F;
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 30rpx;
+  text-align: center;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+}
+
+.toast-main {
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  background-color: white;
+  text-align: center;
+}
+
+.toast-input {
+  margin:30rpx 35% 20rpx 35%;
+  border: 1px solid #913D3F;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 20rpx;
+  box-shadow: 0 2px 2px  #c7c7c7 ;
+}
+
+.toast-button {
+  display: flex;
+  font-size: 30rpx;
+}
+
+.button1 {
+  width: 50%;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  border-bottom-left-radius: 16rpx;
+  text-align: center;
+  padding: 15rpx 0 15rpx 0;
+}
+
+.button2 {
+  width: 50%;
+  background-color: white;
+  color: #913D3F;
+  border-radius: 0px;
+  border-bottom-right-radius: 16rpx;
+  text-align: center;
+  border-left: 1px solid #913D3F;
+  padding: 15rpx 0 15rpx 0;
+}
+
+
+/*动画部分**/
+.hairbox{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  color: #913D3F;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30rpx;
+  background-color: white;
+}
+.ballbox{
+  height: 20rpx;
+}
+.ball{
+  width: 20rpx;
+  height: 10rpx;
+  border-radius: 30rpx;
+  background-color: #913D3F;
+  margin-top: 10rpx;
+  margin-left: 34%;
+  
+}
+.ball2{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 100%;
+  background-color: #913D3F;
+  margin-top: 10rpx;
+  margin-left: 64%;
+  position: absolute;
+  z-index: 99;
+}
+.txt1{
+  font-size: 120rpx;
+  color: #913D3F;
+  margin-top: 30rpx;
+  font-weight: normal;
+}
+.txt2{
+  font-size: 50rpx;
+  color: #913D3F;
+  margin-top: 30rpx;
+  font-weight: normal;
+}
+
+.canvas-box {
+  width: 350px;
+  height: 220px;
+  margin-top: 200rpx;
+  position: relative;
+  margin-left: 40rpx;
+
+}
+
+.line-line {
+  position: absolute;
+  width: 350px;
+  height: 220px;
+}

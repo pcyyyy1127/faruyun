@@ -1,0 +1,8 @@
+<!--pages/service/service.wxml-->
+<view class="box">
+  <image class="box-img" src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/45NBuzDIW489QBoVep5mcRGBnS10TnXkqXrjHP0bxkiuNaa7tEi8WmgK2klMtglXie.hka40yfnkKd23FmPLp3vDxLcn5De4prEgvDFcUVg!/b&bo=PAN.AzwDfgMDGTw!&rf=viewer_4" mode="aspectFit"></image>
+  <view class="box-txt">
+  <view >客服电话：17761202170</view>
+  <view >客服微信号：HairSprouts</view>
+</view>
+</view>

@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="/images/back.jpg"></image>
+  <view >
+    <view wx:if="{{!hasUserInfo && canIUse}}"  bindtap="doLogin" class="user">
+      <image src="/images/comein_back.png"></image>
+    </view>
+    <view bindtap="doctorLogin"  class="doctor"> 
+      <image src="/images/doctorlogin.png" ></image>
+    </view>
+    
+  </view>
+ 
+</view>
+
+
+

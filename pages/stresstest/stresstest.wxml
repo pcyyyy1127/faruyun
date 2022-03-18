@@ -1,0 +1,22 @@
+<!--pages/stresstest/stresstest.wxml-->
+<view>
+  <view class="progress-box">
+    <progress percent="{{pro_index}}" color="#B88385" show-info stroke-width="5" border-radius='4'></progress>
+  </view>
+  <view class="test-box">
+    <view class="test-box-last">
+      <view class="test-box-last-item" bindtap="last">上一题</view>
+      <view class="test-box-last-item" bindtap="next">下一题</view>
+    </view>
+    <text class="test-box-title">第{{test_index}}题：{{questions[test_index-1].title}}</text>
+    <radio-group class="text-box-radio" bindchange="radiochange" data-testscore_index="{{test_index-1}}">
+      <radio value="trueIsChecked" checked="{{questions[test_index-1].trueIsChecked}}">是</radio>
+      <radio value="falseIsChecked" checked="{{questions[test_index-1].falseIsChecked}}">否</radio>
+    </radio-group>
+  </view>
+  <view class="str-btn-box">
+    <view class="str-btn" bindtap="submitTest">
+      <text>提交测试</text>
+    </view>
+  </view>
+</view>

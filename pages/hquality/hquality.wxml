@@ -1,0 +1,36 @@
+<!--pages/hquality/hquality.wxml-->
+<view class="hqualitybox">
+  <!--第一部分发质选择-->
+  <view class="backcard"></view>
+  <view class="box1">
+    <text>{{title}}</text>
+    <view class="opbox" bindtap="option">
+      <text wx:if="{{opisfalse}}">选择发质</text>
+      <text wx:if="{{!opisfalse}}">{{htitle}}</text>
+    </view>
+    <view class="headerbox">
+      <image class="himg" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+    </view>
+  </view>
+  <view class="str-con" wx:if="{{!opisfalse}}">
+    <view class="str-con-item">
+      <view class="str-con-item-con">
+        <rich-text nodes="{{hctx}}"></rich-text>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{isOption}}" class="picker-box-hide"></view>
+  <view wx:if="{{isOption}}" class="pickerbox">
+    <view style="margin-bottom:50rpx;">
+      <text class="cancelpicker" bindtap="cancelpPicker">取消</text>
+      <text class="confirmpicker" bindtap="confirmPicker">保存</text>
+    </view>
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 80%;" value="{{value}}"
+      bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{hquality}}" wx:key="index" style="line-height: 50px; text-align: center;color:#913D3F">{{item}}
+        </view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

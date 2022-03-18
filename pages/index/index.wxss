@@ -1,0 +1,39 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+
+}
+image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.user{
+  width: 40%;
+  height: 6%;
+  border-radius: 10rpx;
+  position: fixed;
+  bottom: 34%;
+  left: 30%;
+}
+
+.doctor{
+   width: 20%;
+   height: 3%;
+   border-radius: 10rpx;
+   position: fixed;
+   bottom: 2%;
+   right: 2%;
+}
+
+
+
+
+

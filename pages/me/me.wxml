@@ -1,0 +1,40 @@
+<!--pages/me/me.wxml-->
+<view class="mebox">
+    <view class="backcard"></view>
+    <text class="nickname">{{userInfo.nickName}}</text>
+    <text class="txtmess">已发芽{{fayam}}次，已发布{{famount}}次近况</text>
+    <view class="headerbox">
+      <image class="himg" src="{{userInfo.avatarUrl}}" mode="aspectFill" ></image>
+    </view>
+    <text class="sign">你好呀！发芽吧</text>
+   <view class="view_2">
+    <view class="view_tupianwenzi" bindtap="toHquality">
+      <image class="image_tupian" src="/images/dataimg.png"></image>
+      <text >发质</text>
+    </view>
+    <view class="view_tupianwenzi" bindtap="toFeedback" >
+      <image class="image_tupian" src="/images/feedback.png"></image>
+      <text >反馈</text>
+    </view>
+    <view class="view_tupianwenzi"  bindtap="toService">
+      <image class="image_tupian" src="/images/service.png"></image>
+      <text >客服</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="/images/setting.png"></image>
+      <text >设置</text>
+    </view>
+ </view>
+ <image class="myfbimg" src="/images/myfbimg.png" bindtap="toIssue"></image>
+ <view class="myissue">
+    <text>我的发布</text>
+ </view>
+    <view class="issuebox" >
+        <view class="idetail" wx:for="{{muissuelist}}" wx:key="index">
+            <view class="debox"></view>
+            <image class="deimg" mode="aspectFill" src="{{item.picsrc}}"></image>
+            <text class="ctx">{{item.issctx}}...</text>
+            <text class="txttime">{{item.time}}</text>
+        </view>
+    </view>
+</view>

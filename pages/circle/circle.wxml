@@ -1,0 +1,92 @@
+<view class="back">
+</view>
+
+<view class="container_c">
+<view class="container">
+  <!--顶部-->
+   
+   <view class="dtop" style="position:fixed;top:0;">
+    
+    <view class="loc">
+      <text>自动定位：成都市温江区</text>
+        <view class="loc_look">
+          <image src="/images/circle_add.png" bindtap="issue"></image>
+        </view>
+    </view>
+    
+    <swiper class="navigation" indicator-dots="true" indicator-color="#C8888A" indicator-active-color="#913D3F" autoplay="true" previous-margin="5px" next-margin="5px" circular="true" interval="5000" duration="1000" >
+      <swiper-item>
+        <image class="dtopimg" mode="aspectFill" src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5pKrnffUUcZ7N0T2fimklMUmaXnpG16ZSS0qv1RHRHUUHqDu5HPtsJV8gv8Ch4VUSIL1jSKXTKr98YeZClojR94!/mnull&bo=uAFqAgAAAAABB*E!&rf=photolist&t=5" ></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="dtopimg" mode="aspectFill" src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5puYQe816cII7vvhGo2UW8C1FyEgQrOZ0Gz*1hZhOmIkIDZVfjAndn3EwMfYrqPh5gcnUwcu0H2PpjgGCdFnNDk!/mnull&bo=7gIzAwAAAAABB*w!&rf=photolist&t=5"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="dtopimg" mode="aspectFill" src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5pKrnffUUcZ7N0T2fimklMU3qq1W*osTdRhySpsbdnxvCtbq9n84XvHor.SK2D8*OnXawGJWEoox2effG26LdA0!/mnull&bo=1QGAAQAAAAABB3U!&rf=photolist&t=5"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="dtopimg" mode="aspectFill" src="http://m.qpic.cn/psc?/V53NDsF102OjyD2xUfsv1a2qsC2dRBoH/ruAMsa53pVQWN7FLK88i5mn81EG49knhdznMTPlxdk2Xysi0JEOl.ZXq5dNPb0co5CVZlnQzmnWygRrCSeNUKwQOBCQRSJt*AvdW92rusc8!/mnull&bo=*QMEAgAAAAADB9o!&rf=photolist&t=5"></image>
+      </swiper-item>
+    </swiper>
+
+  </view>
+  
+</view>
+  <!---->
+  <scroll-view scroll-y style="height: 67vh;">
+  <block wx:for="{{circleList}}" wx:key="index">
+    <view class="dpbox">
+      <view class="header">
+        <image src="{{item.avatarUrl}}" style="width:75rpx;height:75rpx"></image>   
+        <view class="word">
+            <text class="nickname">{{item.nickName}}</text>
+            <text class="time">{{item.sendTime}}</text>
+         </view>
+         <view class="distance">
+           <text>{{item.location}}</text>
+         </view>
+        </view>
+      <view class="content">
+        <text>{{item.content}}</text>
+        <view class="con_img" wx:if="{{item.image1}}" >
+            <image src="{{item.image1}}"></image>
+            <image src="{{item.image2}}"></image>
+            <image src="{{item.image3}}"></image>
+        </view>
+      
+      </view>
+      <view class="like">
+         <image src="/images/like.png" bindtap="clicklike"></image>
+         <text>{{item.like}}</text>
+         <image src="/images/cir_comment.png" bindtap="changeinputBoxShow"></image>
+         <text  bindtap="changeinputBoxShow">{{item.comment}}</text>
+         <image src="/images/cir_transmit.png" ></image>
+         <text>{{item.collect}}</text>
+      </view>
+      <!-- 评论框 -->
+            <view class='model' wx:if="{{inputBoxShow}}">
+                <!-- invisible_model view 用于点击隐藏model评论框 -->
+                <view class='invisible_model' catchtap='invisible'></view>
+                  <view class='input-box'>
+                  <view class="comments">
+                       <image src="/images/flower.jpg"></image>   
+                         <view class="commentword">
+                                <text class="nickname">用户昵称</text>
+                                 <text class="comment">发表内容</text>
+                         </view>
+                          <view class="commentime">
+                            <text>刚刚</text>
+                          </view>
+                  
+                  </view>
+                  <view class="commentbox">
+                     <textarea class="textarea" placeholder="请评论内容" />
+                     <text class='send'>发送</text>
+                  </view>
+                
+                 </view>
+               </view>
+      </view>
+  </block>
+</scroll-view>
+</view>

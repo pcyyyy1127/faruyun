@@ -1,0 +1,101 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/stress_test/stress_test",
+          "pathName": "pages/stress_test/stress_test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/result/result",
+          "pathName": "pages/result/result",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/stresstest/stresstest",
+          "pathName": "pages/stresstest/stresstest",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/science/science",
+          "pathName": "pages/science/science",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/circle/circle",
+          "pathName": "pages/circle/circle",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chating/chating",
+          "pathName": "pages/chating/chating",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/doctorRecentChat/doctorRecentChat",
+          "pathName": "pages/doctorRecentChat/doctorRecentChat",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/science/science",
+          "pathName": "pages/science/science",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chating/chating",
+          "pathName": "pages/chating/chating",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

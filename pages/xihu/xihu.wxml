@@ -1,0 +1,8 @@
+<!--pages//xihu/xihu.wxml-->
+<view class="box">
+  <text class="box-txt">洗护建议</text>
+  <view>
+    <calendar id="calendar" isOpen="{{true}}" selected="{{datas}}"></calendar>
+  </view>
+  <text class="box-re">*标记处为建议洗护周期</text>
+</view>

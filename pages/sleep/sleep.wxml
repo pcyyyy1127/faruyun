@@ -1,0 +1,53 @@
+<!--pages/sleep.wxml-->
+<view class="sleepcontainer">
+  <view class="card">
+    <!--第一部分-->
+    <view class="cardA">
+      <view class="clock">
+
+        <view class="section">
+          <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+            <view class="clockdetail picker" data-sleepdata="getup" bindtap="setAclock">
+            <image src="/images/getup.png"></image>
+            <text>{{getup}}</text>
+          </view>
+          </picker>
+        </view>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view class="clockdetail" data-sleepdata="sleep" bindtap="setAclock">
+            <image src="/images/sleep.png"></image>
+            <text>{{sleep}}</text>
+          </view>
+        </picker>
+      </view>
+      <view class="signbox" bindtap="SignIn">
+        <view class="{{isSign?'signed':'sign'}}">
+          <text>{{signNum}}</text>
+        </view>
+        <text style="margin-top:10rpx">打卡天数</text>
+      </view>
+      <view class="clock">
+        <view class="clockdetail">
+          <image src="/images/bed.png"></image>
+          <text style="width:70rpx">{{sleeptime}}</text>
+        </view>
+      </view>
+    </view>
+    <!--第二部分（芽芽提醒）-->
+    <text class="txt">{{remindyaya}}</text>
+  </view>
+
+  <view class="cardB" wx:for="{{sleepconlist}}" wx:key="index">
+    <image class="wordimg" src="{{item.sleepimgsrc}}"></image>
+    <text class="txtcontent">{{item.content}}</text>
+    <text class="yaya" style="align-self:center;">——云云祝你好梦——</text>
+  </view>
+  <view class="cardB" wx:for="{{audiolist}}" wx:key="index">
+    <text style="align-self:center;font-size:30rpx;margin-top:40rpx">{{item.name}}</text>
+    <text style="align-self:center;font-size:30rpx;margin-top:20rpx;color:gray;">{{item.author}}</text>
+    <audio class="audio-box" poster="{{item.poster}}" name="{{name}}" author="{{author}}" src="{{item.src}}" id="myAudio" controls
+      loop></audio>
+
+    <text class="yaya" style="align-self:center;">——云云祝你好梦——</text>
+  </view>
+</view>

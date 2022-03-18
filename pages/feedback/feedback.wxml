@@ -1,0 +1,10 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="box">
+  <text class="title-box">意见反馈</text>
+  <view class="con-box">
+    <text class="con-box-txt">#小程序端意见反馈# </text>
+    <textarea class="con-box-area" name="" id="" cols="30" rows="10" placeholder="请填写具体内容"
+      placeholder-style="color:#101010 ;" bindinput="getFeedback"></textarea>
+    <view class="con-box-btn" bindtap="submitFeedback">提交</view>
+  </view>
+</view>
